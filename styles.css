@@ -12,6 +12,10 @@ h1 {
   padding-bottom: 5px;
 }
 
+h2 {
+  margin: 1em 0;
+}
+
 .sub-heading {
   font-size: 2rem;
   margin: 1em auto; /* add space above and below the text and center to middle */
