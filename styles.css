@@ -32,3 +32,9 @@ h2 {
 .nav-item .nav-link {
   text-transform: uppercase;
 }
+
+.about-section {
+  margin: 0 auto; /* to center the section */
+  width: 70%;
+  max-width: 700px;
+}
