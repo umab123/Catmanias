@@ -12,6 +12,11 @@ h1 {
   padding-bottom: 5px;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
 .sub-heading {
   font-size: 2rem;
   margin: 1em auto; /* add space above and below the text and center to middle */
@@ -29,7 +34,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.about-section {
+.about-section,
+.adopt-section {
   margin: 0 auto; /* to center the section */
   width: 70%;
   max-width: 700px;
