@@ -10,6 +10,13 @@ h1 {
   text-transform: uppercase;
 }
 
+.sub-heading {
+  font-size: 2rem;
+  margin: 1em auto; /* add space above and below the text and center to middle */
+  font-weight: 200;
+  width: 60%;
+}
+
 /* Layout */
 .container {
   padding: 1em 0; /* add space above and below the container */
