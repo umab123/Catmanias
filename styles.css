@@ -12,10 +12,6 @@ h1 {
   padding-bottom: 5px;
 }
 
-h2 {
-  margin: 1em 0;
-}
-
 .sub-heading {
   font-size: 2rem;
   margin: 1em auto; /* add space above and below the text and center to middle */
@@ -37,4 +33,5 @@ h2 {
   margin: 0 auto; /* to center the section */
   width: 70%;
   max-width: 700px;
+  padding: 1em 0;
 }
