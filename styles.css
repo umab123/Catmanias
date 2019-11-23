@@ -5,9 +5,10 @@ html {
 
 /* Typography */
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 200;
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 
 .sub-heading {
