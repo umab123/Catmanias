@@ -2,3 +2,15 @@ body,
 html {
   text-align: center;
 }
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+/* Layout */
+.container {
+  padding: 1em 0; /* add space above and below the container */
+}
