@@ -24,3 +24,7 @@ h1 {
 .container {
   padding: 1em 0; /* add space above and below the container */
 }
+
+.nav-item .nav-link {
+  text-transform: uppercase;
+}
