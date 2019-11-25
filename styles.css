@@ -1,0 +1,101 @@
+body,
+html {
+  text-align: center;
+  color: #393939;
+}
+
+/* Typography */
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.sub-heading {
+  font-size: 2rem;
+  margin: 1em auto; /* add space above and below the text and center to middle */
+  font-weight: 200;
+  width: 70%;
+  max-width: 600px;
+}
+
+/* Layout */
+.container {
+  padding: 1em 0; /* add space above and below the container */
+}
+
+.nav-item .nav-link {
+  text-transform: uppercase;
+}
+
+.about-section,
+.adopt-section {
+  margin: 0 auto; /* to center the section */
+  width: 70%;
+  max-width: 700px;
+  padding: 3em 0;
+}
+
+/*contact section - format of this needs to be matched with the rest of the page*/
+
+{
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
