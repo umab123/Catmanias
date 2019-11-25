@@ -43,6 +43,16 @@ h2 {
   padding: 3em 0;
 }
 
+.adopt-btn {
+  background-color: #272727;
+  color: #fff;
+  padding: 10px 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Image */
+
 /*contact section - format of this needs to be matched with the rest of the page*/
 
 {
