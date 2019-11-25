@@ -28,6 +28,7 @@ h2 {
 /* Layout */
 .container {
   padding: 1em 0; /* add space above and below the container */
+  margin: 1em auto;
 }
 
 .nav-item .nav-link {
