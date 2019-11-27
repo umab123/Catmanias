@@ -51,6 +51,12 @@ h2 {
   font-weight: 600;
 }
 
+.adopt-btn:hover {
+  background-color: #fff;
+  color: #272727;
+  transition: 0.3s;
+}
+
 /* Image */
 
 /*contact section - format of this needs to be matched with the rest of the page*/
