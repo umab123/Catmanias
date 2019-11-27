@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    
+
     <title>Catmanias</title>
 
     <!-- Bootstrap -->
@@ -11,9 +11,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" type="text/css">
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-none">
       <a class="navbar-brand" href="#">CATMANIAS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,7 +63,7 @@
               <img class="d-block w-100" src="https://i.imgur.com/8nZw18a.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://i.imgur.com/iUPMvoz.jpg" alt="Third slide">
+              <img class="d-block w-100" src="https://i.imgur.com/XPSQnLM.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -96,8 +101,19 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                   ...
+                <div class="modal-body text-left">
+                   <ol>
+                     <li>Cats help you heal.</li>
+                     <li>Cats reduce feelings of stress.</li>
+                     <li>They make you more resistant to allergies.</li>
+                     <li>They are great hunters for mice and spiders.</li>
+                     <li>They can be an effective antidepressant.</li>
+                     <li>Cats are independent.</li>
+                     <li>Cat cuddles release Oxytocin.</li>
+                     <li>97% of doctors believe that owning a cat is good for you.</li>
+                     <li>They are easy entertainment.</li>
+                     <li>They are clean.</li>
+                   </ol>
                 </div>
                 <div class="modal-footer">
                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -112,46 +128,63 @@
       <!-- Adopt A Cat section -->
       <section class="adopt-section" id="adopt">
         <h2>Adopt a cat</h2>
-        <p>At Catmanias, we have over a hundred of lovely cats desperately in need of a home. Adopting a feline friend is a rewarding experience and is an opportunity to make a difference in a cat's life.</p>
+        <p>At Catmanias, we have cats desperately in need of a home. Adopting a feline friend is a rewarding experience and is an opportunity to make a difference in a cat's life.</p>
+        <p><strong>Please browse our collection of cats waiting to find a new home.</strong></p>
+        <button class="adopt-btn">FULL INFO ON ADOPTION PROCESS</button>
 
         <div class="row">
           <div class="col-md">
-            <img src="images/adopt-1.jpg" alt="Adopt Cat 1" class="img-thumbnail">
-            One of three columns
+            <img src="images/cat1.jpg" alt="Adopt Cat 1" class="img-thumbnail">
+            <div class="caption">
+              <p>Spangles</p>
+            </div>
           </div>
           <div class="col-md">
-            <img src="images/adopt-1.jpg" alt="Adopt Cat 1" class="img-thumbnail">
-            One of three columns
+            <img src="images/cat2.jpg" alt="Adopt Cat 1" class="img-thumbnail">
+            <div class="caption">
+              <p>Chibi</p>
+            </div>
           </div>
+        </div>
+        <div class="row">
           <div class="col-md">
-            <img src="images/adopt-1.jpg" alt="Adopt Cat 1" class="img-thumbnail">
-            One of three columns
+            <img src="images/cat3.jpg" alt="Adopt Cat 1" class="img-thumbnail">
+            <div class="caption">
+              <p>Flash</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Contact section -->
-      <section class= "contact-section" id="contact"
+      <section class="contact-section" id="contact">
         <h2>Contact us</h2>
         <p>We'd love to help, contact us today.</p>
 
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="united-kingdom">United Kingdom</option>
-            <option value="scotland">Scotland</option>
-            <option value="wales">Wales</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
+        <div class="row justify-content-center">
+          <div class="column">
+            <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="united-kingdom">United Kingdom</option>
+              <option value="scotland">Scotland</option>
+              <option value="wales">Wales</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+
+            <input type="submit" value="Submit">
         </form>
       </div>
     </div>
+
+  </div> <!-- container -->
   </body>
 </html>
