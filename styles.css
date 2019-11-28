@@ -9,20 +9,18 @@ h1 {
   font-size: 4rem;
   font-weight: 200;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  margin: .5em 0;
 }
 
 h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.sub-heading {
-  font-size: 2rem;
-  margin: 1em auto; /* add space above and below the text and center to middle */
+p {
+  font-size: 1.5rem;
+  margin: .8em auto; /* add space above and below the text and center to middle */
   font-weight: 200;
-  width: 70%;
-  max-width: 700px;
 }
 
 /* Layout */
@@ -38,26 +36,30 @@ h2 {
 .about-section,
 .adopt-section {
   margin: 0 auto; /* to center the section */
-  width: 70%;
-  max-width: 700px;
+  width: 90%;
+  max-width: 1000px;
   padding: 3em 0;
 }
 
 .adopt-btn {
-  background-color: #272727;
-  color: #fff;
+  background-color: #ffffff;
   padding: 10px 26px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-weight: 600;
 }
 
 .adopt-btn:hover {
-  background-color: #fff;
-  color: #272727;
+  background-color: #8a6c60;
+  color: #fff;
   transition: 0.3s;
 }
 
-/* Image */
+.caption {
+  background-color: #8a6c60;
+}
+.caption p {
+  color: #fff;
+}
 
 /*contact section - format of this needs to be matched with the rest of the page*/
 
