@@ -34,7 +34,8 @@ p {
 }
 
 .about-section,
-.adopt-section {
+.adopt-section,
+.donate-section {
   margin: 0 auto; /* to center the section */
   width: 90%;
   max-width: 1000px;
