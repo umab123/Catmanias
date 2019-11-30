@@ -68,6 +68,20 @@ p {
   transition: 0.3s;
 }
 
+.btn {
+  border-color: #8a6c60;
+  color: #393939;
+}
+
+.btn:hover {
+  background-color: #8a6c60;
+  border-color: #8a6c60;
+}
+
+.form-control {
+  border-color: #8a6c60;
+}
+
 .caption {
   background-color: #8a6c60;
 }
