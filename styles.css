@@ -66,7 +66,8 @@ p {
 
 .about-section,
 .adopt-section,
-.donate-section {
+.donate-section,
+.contact-section {
   margin: 0 auto; /* to center the section */
   width: 90%;
   max-width: 1000px;
@@ -108,10 +109,6 @@ p {
   color: #fff;
 }
 
-@media (min-width: 768px) {
-
-}
-
 /*contact section - format of this needs to be matched with the rest of the page*/
 
 {
@@ -129,15 +126,16 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
+  background-color: #8a6c60;
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ffffff;
+  color: #393939;
 }
 
 /* Style the container/Contact section */
