@@ -129,11 +129,7 @@ ul {
   color: #8a6c60;
 }
 
-/*contact section - format of this needs to be matched with the rest of the page*/
-
-{
-  box-sizing: border-box;
-}
+/* Contact Form oage */
 
 /* Style inputs */
 input[type=text], select, textarea {
@@ -151,6 +147,7 @@ input[type=submit] {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 input[type=submit]:hover {
