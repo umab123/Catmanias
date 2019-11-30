@@ -37,6 +37,10 @@ p {
     p {
       font-size: 1.3rem;
     }
+
+    .form-inline {
+      display: none; /* search bar hidden on smaller screens */
+    }
 }
 
 /* Layout */
