@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
 body,
 html {
   text-align: center;
@@ -9,20 +11,36 @@ h1 {
   font-size: 4rem;
   font-weight: 200;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  margin: .5em 0;
 }
 
 h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.sub-heading {
-  font-size: 2rem;
-  margin: 1em auto; /* add space above and below the text and center to middle */
+p {
+  font-size: 1.5rem;
+  margin: .8em auto; /* add space above and below the text and center to middle */
   font-weight: 200;
-  width: 70%;
-  max-width: 700px;
+}
+
+@media screen and (max-width: 990px) {
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .form-inline {
+      display: none; /* search bar hidden on smaller screens */
+    }
 }
 
 /* Layout */
@@ -31,41 +49,88 @@ h2 {
   margin: 1em auto;
 }
 
+.navbar .navbar-brand {
+  color: #8a6c60;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Baloo Bhai', cursive;
+}
+
 .nav-item .nav-link {
   text-transform: uppercase;
 }
 
+.nav-item .nav-link:hover {
+  border-bottom: 2px solid #8a6c60;
+}
+
 .about-section,
-.adopt-section {
+.adopt-section,
+.donate-section,
+.contact-section {
   margin: 0 auto; /* to center the section */
-  width: 70%;
-  max-width: 700px;
+  width: 90%;
+  max-width: 1000px;
   padding: 3em 0;
 }
 
 .adopt-btn {
-  background-color: #272727;
-  color: #fff;
+  background-color: #ffffff;
   padding: 10px 26px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-weight: 600;
 }
 
 .adopt-btn:hover {
-  background-color: #fff;
-  color: #272727;
+  background-color: #8a6c60;
+  color: #fff;
   transition: 0.3s;
 }
 
-/* Image */
-
-/*contact section - format of this needs to be matched with the rest of the page*/
-
-{
-  box-sizing: border-box;
+.btn {
+  border-color: #8a6c60;
+  color: #393939;
 }
 
-/* Style inputs */
+.btn:hover {
+  background-color: #8a6c60;
+  border-color: #8a6c60;
+}
+
+.form-control {
+  border-color: #8a6c60;
+}
+
+.caption {
+  background-color: #8a6c60;
+  cursor: pointer;
+}
+
+.caption p {
+  color: #fff;
+}
+
+/* Social Media */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social-icon {
+  margin-top: 0;
+  color: #393939;
+}
+
+.social-icon:hover {
+  color: #8a6c60;
+}
+
+/* Contact Form page */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -76,18 +141,20 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
+  background-color: #8a6c60;
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ffffff;
+  color: #393939;
 }
 
-/* Style the container/contact section */
+/* Style the container/Contact section */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -117,7 +184,7 @@ input[type=submit]:hover {
   }
 }
 
-/* Styles for the Donate page*/
+/* Styles for the Donate section */
 .donation-container {
 	height: 1000px;
 	font-family: 'Montserrat', sans-serif;
@@ -144,7 +211,7 @@ input[type=submit]:hover {
 }
 
 .donation-box .title {
-	background-color: #C1D82F;
+	background-color: #8a6c60;
 	width: 100%;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -156,17 +223,27 @@ input[type=submit]:hover {
 }
 
 .donation-box .donate-button {
-	background-color: #C1D82F;
+	background-color: #C70039;
 	width: 100%;
 	color: white;
 	text-align: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	font-size: 18px;
 	bottom: 0px;
 	position: absolute;
 	cursor: pointer;
 	font-weight: 800;
+  border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.donation-box .donate-button:hover {
+  background-color: #8a6c60;
+  color: #fff;
+  transition: .3s;
+  border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 
 .donation-box .fields {
@@ -180,7 +257,7 @@ input[type=submit]:hover {
 .donation-box .fields input {
 	width: 90%;
 	font-size: 17px;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 4px;
 	border-width: 0px;
 	color: #5C5C5C;
@@ -205,11 +282,6 @@ input[type=submit]:hover {
    font-size: 15px;
 }
 
-:-ms-input-placeholder {
-   color: #cdcdcd;
-   font-size: 15px;
-}
-
 .donation-box .amount {
 	width: 30%;
 	display: block;
@@ -224,7 +296,7 @@ input[type=submit]:hover {
 	margin-bottom: 10px;
 	text-align: center;
 	color: white;
-	padding: 15px 0px 15px 0px;
+	padding: 8px 0px 8px 0px;
 	border-radius: 4px;
 	font-size: 20px;
 	cursor: pointer;
@@ -251,7 +323,7 @@ input[type=submit]:hover {
 	border: none;
 	background-color: transparent;
 	color: white;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	font-stretch: normal;
 	font-style: normal;
@@ -272,7 +344,7 @@ input[type=submit]:hover {
 
 .switch {
   position: absolute;
-  top: 190px;
+  top: 200px;
   left: 15px;
   margin: 20px auto;
   height: 26px;
@@ -293,6 +365,7 @@ input[type=submit]:hover {
   cursor: pointer;
   font-weight: bold;
 }
+
 .switch-label:active {
   font-weight: bold;
 }
@@ -308,6 +381,7 @@ input[type=submit]:hover {
 .switch-input {
   display: none;
 }
+
 .switch-input:checked + .switch-label {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.65);
@@ -317,6 +391,7 @@ input[type=submit]:hover {
   -o-transition: 0.15s ease-out;
   transition: 0.15s ease-out;
 }
+
 .switch-input:checked + .switch-label-on ~ .switch-selection {
   left: 114px;
 }
@@ -331,7 +406,7 @@ input[type=submit]:hover {
   height: 22px;
   background: #65bd63;
   border-radius: 3px;
-  background-color: #C1D82F;
+  background-color: #8a6c60;
 
   -webkit-transition: left 0.15s ease-out;
   -moz-transition: left 0.15s ease-out;
@@ -341,8 +416,8 @@ input[type=submit]:hover {
 
 .checkboxes {
 	position: absolute;
-	top: 242px;
-	left: 13px;
+	top: 255px;
+	left: 60px;
 }
 
 .checkboxes label {
@@ -385,24 +460,4 @@ input[type=submit]:hover {
 	top: 0px;
 	left: 3px;
 	color: white;
-}
-
-.confirm {
-	display: none;
-	position: absolute;
-	top: 335px;
-	left: 15px;
-	right: 15px;
-	font-size: 16px;
-
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-}
-
-.confirm i {
-	font-weight: bold;
-	text-decoration: underline;
-	font-style: normal;
 }
